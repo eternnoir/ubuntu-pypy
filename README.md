@@ -1,28 +1,20 @@
-ubuntu-14.04-sshd
+ubuntu-pypy
 =================
 
-The Docker ubuntu 14.04 with sshd
+The Docker ubuntu 14.04 with pypy
 
 ##Usage
 
 ```bash
-$ docker pull eternnoir/ubuntu-14.04-sshd
-$ docker run -p 22:22 eternnoir/ubuntu-14.04-sshd 
-```
-The default root password is 'myrootpwd'.
-
-
-##Build
-
-```bash
-$ git clone git@github.com:eternnoir/ubuntu-14.04-sshd.git
-$ cd ubuntu-14.04-sshd
+$ docker pull eternnoir/ubuntu-pypy
+$ docker run -p 22:22 eternnoir/ubuntu-pypy /bin/bash
 ```
 
-Edit your root password in Dockerfile
+In Docker Image
 
 ```bash
-$ docker build -t eternnoir/ubuntu-14.04-sshd
-$ docker run -p 22:22 eternnoir/ubuntu-14.04-sshd 
-``` 
+$ pypy 
+$ pip install irc   // For Example
+```
+
 
